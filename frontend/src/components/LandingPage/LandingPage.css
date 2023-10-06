@@ -7,23 +7,54 @@
 
 .light-mode{
     --primary-color: #3191D7;
-    --font-color: #000;
-    --background-image: ;
+    --font-color: #fff;
+    --background-image: url("../../assets/background.png");
 }
 
 .landing-page-container{
     background-color: var(--primary-color);
     color: var(--font-color);
     width: 100vw;
-    height: 100vh;
 }
 .landing-section{
     background-image: var(--background-image);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+    position: relative;
+    display: flex;
+    flex-direction: column;
 }
-img{
+.dark-land{
     width: 100vw;
     height: 100vw;
+}
+
+button{
+    justify-self: center;
+    align-self: center;
+    position: absolute;
+    top: 150px;
+    background-color: transparent;
+    border: none;
+    transition: transform 0.2s ease-in-out;
+}
+
+button:hover{
+    transform: translateY(-5px);
+}
+
+.explore-button{
+    background-color: #fff;
+    font-size: 20px;
+    color: var(--primary-color);
+    padding: 15px 35px;
+    border-radius: 15px;
+    position: absolute;
+    top: 400px;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
 }
