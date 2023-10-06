@@ -1,0 +1,29 @@
+.dark-mode{
+    --primary-color: #01043B;
+    --font-color: #fff;
+    --background-image: url("../../assets/background.png");
+
+}
+
+.light-mode{
+    --primary-color: #3191D7;
+    --font-color: #000;
+    --background-image: ;
+}
+
+.landing-page-container{
+    background-color: var(--primary-color);
+    color: var(--font-color);
+    width: 100vw;
+    height: 100vh;
+}
+.landing-section{
+    background-image: var(--background-image);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+img{
+    width: 100vw;
+    height: 100vw;
+}
