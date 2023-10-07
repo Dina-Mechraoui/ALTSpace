@@ -1,0 +1,11 @@
+.mars{
+    background-color: #FFD9B0;
+    color: #5B2F3B;
+}
+
+.picture-field{
+    background-image: url('../../assets/red.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}

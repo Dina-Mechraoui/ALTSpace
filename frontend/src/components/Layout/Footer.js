@@ -4,10 +4,12 @@ import { ThemeContext } from "../../context/themeContext";
 import insta from '../../assets/insta-icon.png'
 import twitter from '../../assets/twitter-icon.png'
 import facebook from '../../assets/facebook-icon.png'
-const Footer = () => {
+import phone from '../../assets/phone-icon.png'
+import mail from '../../assets/message-icon.png'
+const Footer = (props) => {
     const {theme, dispatch} = useContext(ThemeContext)
     return ( 
-        <div className={theme==="light" ? "footer-container light-mode" : "footer-container dark-mode"}>
+        <div className={theme==="light" ? "footer-container light-mode " : "footer-container dark-mode"} style={{backgroundColor: props.backgroundColor, color: props.color}}>
             <div className="Wesoilcare">
                 <h1>Voyager X</h1>
                 <p>Voyager X: Making your imaginations possible through technology. Unleashing space tourism for higher yields. Empowering astronomy enthusiasts for a brighter future.</p>
@@ -35,8 +37,8 @@ const Footer = () => {
                 <ul>
                     
                 </ul>
-                <h3><img src=""/>+033340856</h3>
-                <h3><img src=""/>wesoilcare@gmail.com</h3>
+                <h3><img src={phone}/>+033340856</h3>
+                <h3><img src={mail}/>wesoilcare@gmail.com</h3>
                 <ul className='social-media'>
                     <li><img src={twitter}></img></li>
                     <li><img src={insta}></img></li>

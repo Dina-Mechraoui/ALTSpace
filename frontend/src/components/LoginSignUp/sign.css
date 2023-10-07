@@ -1,6 +1,7 @@
 * {
     font-family: "Fredoka", sans-serif;
     --main: #101e54;
+    margin: 0px;
   }
   .sign-page-container {
     display: flex;

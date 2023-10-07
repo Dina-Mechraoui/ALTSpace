@@ -7,6 +7,7 @@ import sun from '../../assets/sun.png'
 import Vector from '../../assets/Vector.png'
 import animation from '../../assets/animation.mp4'
 import Footer from "../Layout/Footer";
+import ResponsiveAppBar from '../Appbar/AppBar';
 
 import './LandingPage.css'
 const LandingPage = () => {
@@ -22,6 +23,7 @@ const LandingPage = () => {
  
     return ( 
         <div className={theme==="light" ? "landing-page-container light-mode" : "landing-page-container dark-mode"}  >
+            <ResponsiveAppBar />
             <div className="landing-section">
                 <button onClick={() => dispatch({type : "TOGGLE"})} className="toggle-button" > <img src={theme==="dark" ? moon : sun}/> </button>
                 <button className="explore-button">Explore</button>
