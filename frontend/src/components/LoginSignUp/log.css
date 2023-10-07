@@ -1,0 +1,79 @@
+* {
+    font-family: "Fredoka", sans-serif;
+    --main: #101e54;
+  }
+  .login-page-container {
+    display: flex;
+    
+    background-color: var(--main);
+  }
+  .login-page-container .half {
+    width: 50%;
+    height: 100vh;
+  }
+.half:first-of-type {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+  }
+  .login-page-container .image {
+    position: absolute;
+    background-image: url("../../assets/SignAndLog/LOGO.png");
+    width: 270px;
+    background-repeat: no-repeat;
+    height: 35px;
+    left: 15px;
+    top: 15px;
+  }
+  .login-page-container .half:first-of-type h2 {
+    margin-bottom: 50px;
+    color: white;
+    font-size: 30px;
+  }
+  .login-page-container .half:first-of-type form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  .login-page-container .half:first-of-type form input {
+    width: 260px;
+    height: 15px;
+    padding: 15px;
+    border: 0px solid transparent;
+    border-radius: 10px;
+    box-shadow: rgba(255, 255, 255, 0.24) 0px 3px 8px;
+  }
+  .login-page-container .half:first-of-type form .toLogIn {
+    display: flex;
+    gap: 20px;
+    color: rgba(255, 255, 255, 0.4);
+  }
+  .login-page-container .half:first-of-type form .toLogIn a {
+    color: white;
+    text-decoration: none;
+    padding-bottom: 5px;
+    width: 80px;
+    text-align: center;
+    border-bottom: 1.5px solid white;
+  }
+  .login-page-container .half:first-of-type form input:last-of-type {
+    width: 200px;
+    height: 40px;
+    padding: 0;
+    color: var(--main);
+    font-size: 20px;
+    text-align: center;
+  }
+  .login-page-container .sign {
+    background: url("../../assets/SignAndLog/sign.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    align-self: flex-end;
+    border: 1px solid transparent;
+    border-radius: 30px;
+  }

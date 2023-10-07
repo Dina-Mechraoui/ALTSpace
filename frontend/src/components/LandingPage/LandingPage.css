@@ -19,18 +19,33 @@
 .landing-section{
     background-image: var(--background-image);
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-attachment:fixed;
     background-size: cover;
     position: relative;
     display: flex;
     flex-direction: column;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
 }
+
+.scrolling-text {
+    white-space: nowrap; 
+    font-size: 100px;
+    position: absolute;
+    top: 40%; 
+    right: 0; 
+    transition: transform 0.3s ease; 
+}
+
 .dark-land{
     width: 100vw;
     height: 100vw;
+    z-index: 1;
 }
 
-button{
+.explore-button, 
+.toggle-button{
     justify-self: center;
     align-self: center;
     position: absolute;
@@ -38,6 +53,7 @@ button{
     background-color: transparent;
     border: none;
     transition: transform 0.2s ease-in-out;
+    z-index: 2;
 }
 
 button:hover{
@@ -52,9 +68,71 @@ button:hover{
     border-radius: 15px;
     position: absolute;
     top: 400px;
+    z-index: 2;
+}
+.grid{
+    padding: 6vw 20vw;
 }
 
-.grid{
+.about-us-section, .features-section{
     display: grid;
-    grid-template-columns: 1.5fr 1fr;
+    grid-template-columns: 1fr 0.5fr;
+}
+
+.about-us-section .image-container,
+.features-section .image-container{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+.about-us-section .image-container img,
+.features-section .image-container img{
+    width: 12vw;
+}
+
+.about-us-section .text-container,
+.features-section .text-container,
+.work-section .text-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 25px;
+    text-align: justify;
+}
+
+.work-section{
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+}
+
+
+.work-section .image-container{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    overflow: hidden;
+}
+.work-section .image-container video,
+.features-section .image-container video {
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.work-section .text-container{
+    text-align: justify;
+}
+
+.features-section .buttons{
+    display: flex;
+    gap: 20px;
+}
+.features-section .buttons > *{ 
+    padding: 10px 30px;
+    border-radius: 15px;
+    border: none;
+}
+
+.features-section .button2{
+    background-color: #915399;
 }

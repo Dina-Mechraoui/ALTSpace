@@ -1,0 +1,47 @@
+.dark-mode{
+    --background-color: #15266F;
+}
+.light-mode{
+    --background-color: #507C5C;
+}
+
+.footer-container{
+    background-color: var(--background-color);
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 50px;
+}
+
+.footer-container > *{
+    flex-basis: 20%;
+}
+.Wesoilcare, 
+.Explore,
+.Solutions, 
+.contact-us{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;}
+
+.Wesoilcare p,
+.Solutions p, 
+.contact-us p{
+    padding-left: 20px;
+}
+
+
+.Explore ul,
+.Solutions ul, 
+.contact-us ul{
+    list-style: none;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact-us .social-media{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
