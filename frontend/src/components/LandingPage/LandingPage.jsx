@@ -8,7 +8,6 @@ import Vector from '../../assets/Vector.png'
 import animation from '../../assets/animation.mp4'
 import Footer from "../Layout/Footer";
 import ResponsiveAppBar from '../Appbar/AppBar';
-
 import './LandingPage.css'
 const LandingPage = () => {
     const {theme, dispatch} = useContext(ThemeContext)
@@ -56,7 +55,7 @@ const LandingPage = () => {
                     <h1>Features</h1>
                     <p>Our website is your gateway to the solar system. Explore in-depth guides to all the planets, stay up-to-date with the latest space news and missions, and be the first to know about upcoming travel opportunities to Earth's stations on these distant worlds. Dive into immersive tours, access educational resources, and join a community of space enthusiasts. Whether you're here to learn, dream, or plan your next cosmic adventure, we've got you covered</p>
                     <div className="buttons">
-                        <button className="button1">Explore</button>
+                        <button className="button1"><a href="../Planets/solarInfo">Explore</a></button>
                         <button className="button2">Travel</button>
                     </div>
                 </div>  

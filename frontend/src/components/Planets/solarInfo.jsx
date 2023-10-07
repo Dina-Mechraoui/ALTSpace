@@ -1,3 +1,4 @@
+
 import "./solarInfo.css";
 import sun from "../../assets/sun.png";
 import logo from "../../assets/SignAndLog/LOGO.png";
@@ -7,25 +8,12 @@ import c2 from "../../assets/char2.png";
 import c3 from "../../assets/char3.png";
 import c4 from "../../assets/char4.png";
 import c5 from "../../assets/char5.png";
-import Planet from "./planet";
 import { useState } from "react";
 
 const SolarInfo = () => {
 
-  // props object 
-  const [mainObject, setMainObject] = useState({
-    name: "sss",
-    color: "ttt"
-  })
-  
-
-  const [enabled,setEnabled]=useState(false)
-  const handleEnabled =()=>{
-    setEnabled(true)
-  }
   return (
-     (enabled) ?
-    (<div className="solarInfo-container">
+    <div className="solarInfo-container">
       <nav>
         <img src={logo} alt="logo" />
       </nav>
@@ -78,9 +66,6 @@ const SolarInfo = () => {
         </div>
       </div>
     </div>)
-    : (<Planet obj={mainObject} /> )
-    
-  );
 };
 
 export default SolarInfo;
