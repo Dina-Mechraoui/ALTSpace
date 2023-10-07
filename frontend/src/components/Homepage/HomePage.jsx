@@ -156,3 +156,4 @@ Do you wish to reach <br/> the Galaxy?
 
 
 export default HomePage;
+

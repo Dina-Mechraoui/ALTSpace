@@ -1,4 +1,4 @@
-{/*import "./solarInfo.css";
+import "./solarInfo.css";
 import sun from "../../assets/sun.png";
 import logo from "../../assets/SignAndLog/LOGO.png";
 import vector from "../../assets/Vector.png";
@@ -14,8 +14,8 @@ const SolarInfo = () => {
 
   // props object 
   const [mainObject, setMainObject] = useState({
-    name:"sss",
-    color:"ttt"
+    name: "sss",
+    color: "ttt"
   })
   
 
@@ -83,5 +83,5 @@ const SolarInfo = () => {
   );
 };
 
-export default SolarInfo;*/}
+export default SolarInfo;
 

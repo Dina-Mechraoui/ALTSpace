@@ -27,7 +27,6 @@ const LandingPage = () => {
             <div className="landing-section">
                 <button onClick={() => dispatch({type : "TOGGLE"})} className="toggle-button" > <img src={theme==="dark" ? moon : sun}/> </button>
                 <button className="explore-button">Explore</button>
-                {/*<h1 className="scrolling-text" style={{ transform: `translateX(${newPosition}%)` }}>NASA SPACE APPS</h1> */}
                 <img src={theme==="dark" ? darkBG : lightBG} className="dark-land" />
             </div>
             <div className="about-us-section grid">

@@ -11,6 +11,7 @@ import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
 import { styled } from '@mui/material/styles';
+import { useState } from 'react';
 
 const MyButton = styled(Button)(({ theme, active }) => ({
   border: 'none',
@@ -25,8 +26,8 @@ const MyButton = styled(Button)(({ theme, active }) => ({
 const pages = ['Home', 'Travel', 'Login', 'Contact'];
 
 function ResponsiveAppBar() {
-  const [anchorElNav, setAnchorElNav] = React.useState(null);
-  const [activePage, setActivePage] = React.useState('Travel'); // You need to update this state
+  const [anchorElNav, setAnchorElNav] = useState(null);
+  const [activePage, setActivePage] = useState('Home'); // You need to update this state
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
@@ -36,7 +37,7 @@ function ResponsiveAppBar() {
     setAnchorElNav(null);
   };
 
-  // Function to set the active page (you need to call this when the page changes)
+  // Function to set the active page 
   const handleSetActivePage = (page) => {
     setActivePage(page);
   };
@@ -46,7 +47,7 @@ function ResponsiveAppBar() {
       <Container maxWidth="xl">
         <Toolbar disableGutters>
             <Box sx={{display: { xs: 'none', md: 'flex' }}}>
-          <img style={{marginRight: 10,width:'30px',height:'27px'}} src='./logo.svg' ></img>
+          <img style={{marginRight: '20px',width:'30px',height:'27px'}} src='./logo.svg' ></img>
           </Box>
          <Typography
             variant="h6"

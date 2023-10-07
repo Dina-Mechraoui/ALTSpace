@@ -16,7 +16,6 @@ function App() {
           <Route path="/signup" element={<Signup />}></Route>
           <Route path="/HomePage" element={<HomePage />} ></Route>
           <Route path="/planet" element={<Planet />}></Route>
-
         </Routes>
       </BrowserRouter>
     </div>
